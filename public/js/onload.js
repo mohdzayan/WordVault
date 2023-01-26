@@ -14,5 +14,5 @@ function preventDefaultSubmit() {
         btn.addEventListener("click", (e)=>{
             e.preventDefault()
         })
-    });
+    }).then(res=>res.json()).then(data=>console.log(data))
 }
