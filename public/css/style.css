@@ -56,3 +56,17 @@ body{
     font-size: 32px;
     font-weight: 400;
 }
+textarea{
+    text-align: center;
+    outline: none;
+    border: 2px solid #2B3D41;
+    border-radius: 5px;
+    resize: none;
+}
+input[type="submit"]{
+    cursor: pointer;
+    background: #56CBF9;
+    color:#fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
