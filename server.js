@@ -1,13 +1,13 @@
 const express = require("express")
 const path = require("path")
-
+const router = require("./routes/router")
 const app = express()
 
 const PORT = 80
 
 app.use("/static", express.static(path.join(__dirname, "public")))
 app.set("view-engine", "pug")
-
+app.use("/api", router)
 
 app.get("/", (req, res)=>{
     res.status(200).render("home.pug", {title: "Home"})
