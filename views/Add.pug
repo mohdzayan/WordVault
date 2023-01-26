@@ -1,0 +1,12 @@
+extends template.pug
+append content 
+    .mainSection 
+        .title Add new words
+        .textarea
+            br
+            form(action="")
+                input(type="text" name="word" placeholder="word")
+                br
+                input(type="number" name="value" placeholder="value") 
+                br
+                input(type="submit", value="Done")
