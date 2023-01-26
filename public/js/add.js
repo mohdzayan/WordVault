@@ -9,5 +9,5 @@ function addWord() {
             'Content-type':"application/x-www-form-urlencoded"
         },
         body: data
-    })
+    }).then(res=>res.json()).then(data=>console.log(data))
 }
