@@ -4,8 +4,12 @@ const app = express()
 
 const PORT = 80
 
-app.get("/", (rq, res)=>{
-    res.status(200).json("up")
+app.use("/static", express.static("public"))
+app.set("view-engine", "pug")
+
+
+app.get("/", (req, res)=>{
+    res.status(200).render("home.pug")
 })
 
 app.listen(PORT, (req, res)=>{
