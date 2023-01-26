@@ -15,6 +15,9 @@ app.get("/", (req, res)=>{
 app.get("/home", (req, res)=>{
     res.status(200).render("home.pug", {title: "Home"})
 })
+app.get("/add", (req, res)=>{
+    res.render("add.pug", {title:"Add"})
+})
 
 app.listen(PORT, (req, res)=>{
     console.log(`Server up on ${PORT}`)

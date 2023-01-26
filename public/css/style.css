@@ -57,11 +57,11 @@ body{
     font-weight: 400;
 }
 textarea{
-    text-align: center;
     outline: none;
     border: 2px solid #2B3D41;
     border-radius: 5px;
     resize: none;
+    text-align: center;
 }
 input[type="submit"]{
     cursor: pointer;
@@ -69,4 +69,12 @@ input[type="submit"]{
     color:#fff;
     padding: 8px 16px;
     border-radius: 5px;
+}
+input{
+    outline: none;
+    text-align: center;
+    border: 2px solid #2B3D41;
+    border-radius: 5px; 
+    margin-bottom: 8px;
+    padding: 8px 16px;
 }
