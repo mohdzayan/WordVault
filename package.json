@@ -1,0 +1,23 @@
+{
+  "name": "wordvault",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohdzayan/WordVault.git"
+  },
+  "author": "Zayan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohdzayan/WordVault/issues"
+  },
+  "homepage": "https://github.com/mohdzayan/WordVault#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
