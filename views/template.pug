@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{title}
+        style 
+            include ../public/css/style.css
+        script(src="../static/js/navbar.js") 
+    body(onload="nav()")
+        block content
+            .navbar 
+                ul 
+                    li: a(href="/home").link Home
+                    ul.addLinks  
+                        li: a(href="/add").link Add
+                        li: a(href="/visualize").link Visualize   
+        block footer
