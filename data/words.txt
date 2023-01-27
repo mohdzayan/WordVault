@@ -1,1 +1,1 @@
-[{"word":"Zayan","value":"3"},{"word":"huzaif","value":"4"},{"word":"Nakeeb","value":"1"},{"word":"Baji","value":"1"}]
+[{"word":"nigga","value":"5"},{"word":"excillent","value":"1"},{"word":"laptop","value":"2"}]

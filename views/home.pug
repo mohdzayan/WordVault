@@ -1,11 +1,13 @@
 extends template.pug
-
+append script 
+    script(src="../static/js/home.js") 
 append content 
     .mainSection 
         .title WordVault
         .textArea 
             h3 write a sentence
-            form(action="") 
-                textarea(name="", cols="30", rows="10")
+            form(action="")#textForm
+                textarea(name="text", cols="30", rows="10")#text
                 br
-                input(type="submit", value="Get Value") 
+                input(type="submit", value="Get Value" onclick="check()").submit 
+            p.textValue
