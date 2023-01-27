@@ -1,1 +1,1 @@
-{"word":"Zayan","value":"1"}?
+[{"word":"Zayan","value":"2"},{"word":"huzaif","value":"2"},{"word":"Nakeeb","value":"1"}]
