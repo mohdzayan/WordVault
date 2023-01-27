@@ -52,5 +52,15 @@ router.post("/add", urlencodedParser, (req, res)=>{
         return res.status(200).json("this is add route")        }
 
 })
+router.get("/getWords", (req, res)=>{
+    let isFile = fs.existsSync(path.join(__dirname, "../data/words.txt"))
+    if(isFile){
+        let data = fs.readFileSync(path.join(__dirname, "../data/words.txt")).toString()
+        res.status(200).json(data)
+    }
+    else{
+        res.status(200).json("no words")
+    }
+})
 
 module.exports = router
